@@ -9,8 +9,10 @@ const Navbar = () => {
     <>
       <nav className="w-full flex py-6 justify-between items-center navbar">
         <img src={logo} alt="HooBank" className="w-[124px] h-[32px]" />
+
+        {/*Spreading options in full screen, mainly in desktop view*/}
         <ul
-          id="mobile-navbar"
+          id="top-navbar-view"
           className="list-none sm:flex hidden justify-end items-center flex-1"
         >
           {navLinks.map((nav, index) => (
